@@ -1,0 +1,29 @@
+
+Suggest your account to contacts: disabled
+Suggest your account to Facebook friends: disabled
+Suggest your account to people who open or send links to you: disabled
+Private Account: Disabled
+Personalized Ads: Disabled
+Who Can Post Comments: Everyone
+Who Can Duet With Me: Everyone
+Who Can Send Me Message: Everyone
+Who Can View Videos I Liked: Myself
+Who Can Stitch with your videos: Everyone
+Allow DownLoad: Everyone
+Filter Comments: Enabled
+
+Push Notification
+New Fans: On
+New Likes on My Video: On
+New Comments on My Video: On
+Desktop notification: Default
+
+Language
+App Language: English
+Web Language: N/A
+
+Content Preferences
+Video Languages Preferences: [English]
+Interests: Funny|Sports|Pranks
+Keyword filters for videos in For You feed: []
+Keyword filters for videos in Following feed: []
