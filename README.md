@@ -1,3 +1,3 @@
 # TikTok Data Checker
 
-For checking and reading off all of your TikTok data to you 
+For checking and displaying all of your TikTok data to you 
