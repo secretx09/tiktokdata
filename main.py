@@ -93,6 +93,3 @@ while True:
     else: 
         print('Please pick a number 1-9')
     view = input('\n\n\n\nWhat would you like to see? ("q to quit") >>> ')
-
-    #test test test 
-    "This is a test"
