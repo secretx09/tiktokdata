@@ -8,8 +8,7 @@ file7_path = "TikTok_Data_1735588272\Tiktok\Activity\Location Reviews.txt"
 file8_path = "TikTok_Data_1735588272\Tiktok\Activity\Login History.txt"
 file9_path = "TikTok_Data_1735588272\Tiktok\Activity\Purchases.txt"
 file10_path = "TikTok_Data_1735588272\Tiktok\Activity\Searches.txt"
-file11_path = "TikTok_Data_1735588272\Tiktok\Activity\Share History.txt"
-file12_path = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
+file11_path = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
 
 
 
@@ -25,7 +24,7 @@ view = input('What would you like to see? ("q" to quit) >>> ')
 while True:
     # Option 1: Activity
     if view == '1':
-        activity_option = int(input("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nOther(6)\n>>>"))
+        activity_option = int(input("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nShare History(6)\nOther(7)\n>>>"))
         if activity_option == 1:
             with open("TikTok_Data_1735588272\Tiktok\Activity\Browsing History.txt", "r", encoding='utf-8') as file:
                 content = file.read()
@@ -64,6 +63,11 @@ while True:
                 print("\n\nFollowing: " + content)
 
         elif activity_option == 6:
+            with open("TikTok_Data_1735588272\Tiktok\Activity\Share History.txt", "r", encoding='utf-8') as file:
+                content = file.read()
+                print("\n\nShare History: " + content)
+
+        elif activity_option == 7:
             with open(file5_path, "r", encoding='utf-8') as file5:
                 content5 = file5.read()
                 print("\n\nHashtags: " + content5)
@@ -90,11 +94,7 @@ while True:
 
             with open(file11_path, "r", encoding='utf-8') as file11:
                 content11 = file11.read()
-                print("\n\nShare History: " + content11)
-
-            with open(file12_path, "r", encoding='utf-8') as file12:
-                content12 = file12.read()
-                print("\n\nStatus: " + content12)
+                print("\n\nStatus: " + content11)
         else:
             print("Please choose one of the options (1-6)")
 
