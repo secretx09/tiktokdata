@@ -3,7 +3,21 @@ view = input('What would you like to see? ("q" to quit) >>> ')
 while True:
     #Option 1
     if view == '1': 
-        activity_option = print("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nOther(6)")
+        activity_option = int(input("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nOther(6)\n>>>"))
+        if activity_option == 1:
+            print('browsing history')
+        elif activity_option == 2: 
+            print("comments")
+        elif activity_option == 3:
+            print('favorites')
+        elif activity_option == 4:
+            print('followers')
+        elif activity_option == 5:
+            print("following")
+        elif activity_option == 6: 
+            print('other')
+        else: 
+            print("Please choose one of the options (1-6)")
 
 
     #Option 2
@@ -12,7 +26,13 @@ while True:
     
     #Option 3
     elif view == '3':
-        print('Blocked accounts(1)\nSettings(2)')
+        settings = int(input('Blocked accounts(1)\nSettings(2)\n>>>'))
+        if settings == 1:
+            print("Blocked accounts")
+        elif settings == 2: 
+            print("Settings")
+        else: 
+            print("Please choose one of the 2 options")
     
     #Option 4
     elif view == '4':
@@ -24,18 +44,48 @@ while True:
 
     #Option 6
     elif view == '6':
-        print('Posts(1)\nRecently deleted posts(2)')
+        posts = int(input('Posts(1)\nRecently deleted posts(2)\n>>>'))
+        if posts == 1:
+            print("posts")
+        elif posts == 2: 
+            print("Recently deleted")
+        else: 
+            print("Please choose one of the 2 options")
 
     #Option 7
     elif view == '7':
-        print('Profile info(1)\nOther(2)')
+        profile = int(input('Profile info(1)\nOther(2)\n>>>'))
+        if profile == 1: 
+            print("Profile info")
+        elif profile == 2: 
+            print("Other")
+        else: 
+            print("Please choosse one of the 2 options")
 
     #Option 8
     elif view == '8':
-        print('Live history *comments, watched lives, etc*(1)\nOther(2)')
+        live = int(input('Live history *comments, watched lives, etc*(1)\nOther(2)\n>>>'))
+        if live == 1: 
+            print("live history")
+        elif live == 2: 
+            print("Other")
+        else: 
+            print("Please choose 1 of the 2 options")
 
     elif view == '9':
-        print('Orders(1)\nBrowsing History(2)\nShopping Cart(3)\nReviews(4)\nOther(5)')
+        shop = int(input('Orders(1)\nBrowsing History(2)\nShopping Cart(3)\nReviews(4)\nOther(5)\n>>>'))
+        if shop == 1: 
+            print('orders')
+        elif shop == 2: 
+            print("browsing history")
+        elif shop == 3: 
+            print("cart")
+        elif shop == 4: 
+            print("reviews")
+        elif shop == 5: 
+            print('other')
+        else: 
+            print("Please choose one of the options (1-5)")
     
     #Quit
     elif view =="q":
@@ -43,4 +93,4 @@ while True:
 
     else: 
         print('Please pick a number 1-9')
-    view = input('What would you like to see? ("q to quit") >>> ')
+    view = input('\n\n\n\nWhat would you like to see? ("q to quit") >>> ')
