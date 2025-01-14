@@ -10,6 +10,10 @@ file9_path = "TikTok_Data_1735588272\Tiktok\Activity\Purchases.txt"
 file10_path = "TikTok_Data_1735588272\Tiktok\Activity\Searches.txt"
 file11_path = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
 
+file12_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Ad Interests.txt"
+file13_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Instant Form Ads Responses.txt"
+file14_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Off TikTok Activity.txt"
+
 
 
 
@@ -100,9 +104,17 @@ while True:
 
     #Option 2
     elif view == '2':
-        with open("", "r") as file:
-            content = file.read()
-            print(content)
+        with open(file12_path, "r", encoding='utf-8') as file12:
+            content12 = file12.read()
+            print("\n\nAd Interests: " + content12)
+
+        with open(file13_path, "r", encoding='utf-8') as file13:
+            content13 = file13.read()
+            print("\n\nAd form responses: " + content13)
+
+        with open(file14_path, "r", encoding='utf-8') as file14:
+            content14 = file14.read()
+            print("\n\nOff TikTok Activity: " + content14)
     
     #Option 3
     elif view == '3':
