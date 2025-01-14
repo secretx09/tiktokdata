@@ -1,18 +1,22 @@
-file1_path = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Effects.txt"
-file2_path = "TikTok_Data_1735588272\Tiktok\Activity\Favorite HashTags.txt"
-file3_path = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Sounds.txt"
-file4_path = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Videos.txt"
-file5_path = "TikTok_Data_1735588272\Tiktok\Activity\Hashtag.txt"
-file6_path = "TikTok_Data_1735588272\Tiktok\Activity\Like List.txt"
-file7_path = "TikTok_Data_1735588272\Tiktok\Activity\Location Reviews.txt"
-file8_path = "TikTok_Data_1735588272\Tiktok\Activity\Login History.txt"
-file9_path = "TikTok_Data_1735588272\Tiktok\Activity\Purchases.txt"
-file10_path = "TikTok_Data_1735588272\Tiktok\Activity\Searches.txt"
-file11_path = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
-
-file12_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Ad Interests.txt"
-file13_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Instant Form Ads Responses.txt"
-file14_path = "TikTok_Data_1735588272\Tiktok\Ads and data\Off TikTok Activity.txt"
+browsing_history = "TikTok_Data_1735588272\Tiktok\Activity\Browsing History.txt"
+comments = "TikTok_Data_1735588272\Tiktok\Activity\Comments.txt"
+followers = "TikTok_Data_1735588272\Tiktok\Activity\Follower.txt"
+following = "TikTok_Data_1735588272\Tiktok\Activity\Following.txt"
+share_history = "TikTok_Data_1735588272\Tiktok\Activity\Share History.txt"
+fav_effect = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Effects.txt"
+fav_hash = "TikTok_Data_1735588272\Tiktok\Activity\Favorite HashTags.txt"
+fav_sound = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Sounds.txt"
+fav_video = "TikTok_Data_1735588272\Tiktok\Activity\Favorite Videos.txt"
+hashtags = "TikTok_Data_1735588272\Tiktok\Activity\Hashtag.txt"
+like_list = "TikTok_Data_1735588272\Tiktok\Activity\Like List.txt"
+loc_review = "TikTok_Data_1735588272\Tiktok\Activity\Location Reviews.txt"
+login_history = "TikTok_Data_1735588272\Tiktok\Activity\Login History.txt"
+purchases = "TikTok_Data_1735588272\Tiktok\Activity\Purchases.txt"
+searches = "TikTok_Data_1735588272\Tiktok\Activity\Searches.txt"
+status = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
+ad_interest = "TikTok_Data_1735588272\Tiktok\Ads and data\Ad Interests.txt"
+ad_response = "TikTok_Data_1735588272\Tiktok\Ads and data\Instant Form Ads Responses.txt"
+off_tiktok_activity = "TikTok_Data_1735588272\Tiktok\Ads and data\Off TikTok Activity.txt"
 
 
 
@@ -30,89 +34,89 @@ while True:
     if view == '1':
         activity_option = int(input("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nShare History(6)\nOther(7)\n>>>"))
         if activity_option == 1:
-            with open("TikTok_Data_1735588272\Tiktok\Activity\Browsing History.txt", "r", encoding='utf-8') as file:
-                content = file.read()
-                print("\n\nBrowsing History: " + content)
+            with open(browsing_history, "r", encoding='utf-8') as history:
+                browse_his = history.read()
+                print("\n\nBrowsing History: " + browse_his)
 
         elif activity_option == 2:
-            with open("TikTok_Data_1735588272\Tiktok\Activity\Comments.txt", "r", encoding='utf-8') as file:
-                content = file.read()
-                print("\n\nComments: " + content)
+            with open(comments, "r", encoding='utf-8') as comment:
+                comment_his = comment.read()
+                print("\n\nComments: " + comment_his)
 
         elif activity_option == 3:
-            with open(file1_path, "r", encoding='utf-8') as file1:
-                content1 = file1.read()
-                print("\n\nEffects: " + content1)
+            with open(fav_effect, "r", encoding='utf-8') as effect:
+                fav_effects = effect.read()
+                print("\n\nEffects: " + fav_effects)
 
-            with open(file2_path, "r", encoding='utf-8') as file2:
-                content2 = file2.read()
-                print("\n\nHashtags: " + content2)
+            with open(fav_hash, "r", encoding='utf-8') as hash:
+                fav_hashs = hash.read()
+                print("\n\nHashtags: " + fav_hashs)
 
-            with open(file3_path, "r", encoding='utf-8') as file3:
-                content3 = file3.read()
-                print("\n\nSounds: " + content3)
+            with open(fav_sound, "r", encoding='utf-8') as sounds:
+                fav_sounds = sounds.read()
+                print("\n\nSounds: " + fav_sounds)
 
-            with open(file4_path, "r", encoding='utf-8') as file4:
-                content4 = file4.read()
-                print("\n\nVideos: " + content4)
+            with open(fav_video, "r", encoding='utf-8') as videos:
+                fav_videos = videos.read()
+                print("\n\nVideos: " + fav_videos)
 
         elif activity_option == 4:
-            with open("TikTok_Data_1735588272\Tiktok\Activity\Follower.txt", "r", encoding='utf-8') as file:
-                content = file.read()
-                print("\n\nFollowers: " + content)
+            with open(followers, "r", encoding='utf-8') as follows:
+                followed_by = file.read()
+                print("\n\nFollowers: " + followed_by)
 
         elif activity_option == 5:
-            with open("TikTok_Data_1735588272\Tiktok\Activity\Following.txt", "r", encoding='utf-8') as file:
-                content = file.read()
-                print("\n\nFollowing: " + content)
+            with open(following, "r", encoding='utf-8') as follow:
+                following_acc = follow.read()
+                print("\n\nFollowing: " + following_acc)
 
         elif activity_option == 6:
-            with open("TikTok_Data_1735588272\Tiktok\Activity\Share History.txt", "r", encoding='utf-8') as file:
-                content = file.read()
-                print("\n\nShare History: " + content)
+            with open(share_history, "r", encoding='utf-8') as share:
+                share_his = share.read()
+                print("\n\nShare History: " + share_his)
 
         elif activity_option == 7:
-            with open(file5_path, "r", encoding='utf-8') as file5:
-                content5 = file5.read()
-                print("\n\nHashtags: " + content5)
+            with open(hashtags, "r", encoding='utf-8') as hashs:
+                hashtag = hashs.read()
+                print("\n\nHashtags: " + hashtag)
 
-            with open(file6_path, "r", encoding='utf-8') as file6:
-                content6 = file6.read()
-                print("\n\nLike list: " + content6)
+            with open(like_list, "r", encoding='utf-8') as like_lists:
+                l_l = like_lists.read()
+                print("\n\nLike list: " + l_l)
 
-            with open(file7_path, "r", encoding='utf-8') as file7:
-                content7 = file7.read()
-                print("\n\nLocation Reviews?: " + content7)
+            with open(loc_review, "r", encoding='utf-8') as location:
+                loc_rev = location.read()
+                print("\n\nLocation Reviews?: " + loc_rev)
 
-            with open(file8_path, "r", encoding='utf-8') as file8:
-                content8 = file8.read()
-                print("\n\nLogin History: " + content8)
+            with open(login_history, "r", encoding='utf-8') as logins:
+                log_his = logins.read()
+                print("\n\nLogin History: " + log_his)
 
-            with open(file9_path, "r", encoding='utf-8') as file9:
-                content9 = file9.read()
-                print("\n\nPurchases: " + content9)
+            with open(purchases, "r", encoding='utf-8') as purchase:
+                purchased = purchase.read()
+                print("\n\nPurchases: " + purchased)
 
-            with open(file10_path, "r", encoding='utf-8') as file10:
-                content10 = file10.read()
-                print("\n\nSearches: " + content10)
+            with open(searches, "r", encoding='utf-8') as search:
+                searched = search.read()
+                print("\n\nSearches: " + searched)
 
-            with open(file11_path, "r", encoding='utf-8') as file11:
-                content11 = file11.read()
-                print("\n\nStatus: " + content11)
+            with open(status, "r", encoding='utf-8') as stats:
+                stattus = stats.read()
+                print("\n\nStatus: " + stattus)
         else:
             print("Please choose one of the options (1-6)")
 
     #Option 2
     elif view == '2':
-        with open(file12_path, "r", encoding='utf-8') as file12:
+        with open(ad_interest, "r", encoding='utf-8') as file12:
             content12 = file12.read()
             print("\n\nAd Interests: " + content12)
 
-        with open(file13_path, "r", encoding='utf-8') as file13:
+        with open(ad_response, "r", encoding='utf-8') as file13:
             content13 = file13.read()
             print("\n\nAd form responses: " + content13)
 
-        with open(file14_path, "r", encoding='utf-8') as file14:
+        with open(off_tiktok_activity, "r", encoding='utf-8') as file14:
             content14 = file14.read()
             print("\n\nOff TikTok Activity: " + content14)
     
