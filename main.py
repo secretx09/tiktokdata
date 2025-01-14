@@ -108,17 +108,17 @@ while True:
 
     #Option 2
     elif view == '2':
-        with open(ad_interest, "r", encoding='utf-8') as file12:
-            content12 = file12.read()
-            print("\n\nAd Interests: " + content12)
+        with open(ad_interest, "r", encoding='utf-8') as interest:
+            ad_int = interest.read()
+            print("\n\nAd Interests: " + ad_int)
 
-        with open(ad_response, "r", encoding='utf-8') as file13:
-            content13 = file13.read()
-            print("\n\nAd form responses: " + content13)
+        with open(ad_response, "r", encoding='utf-8') as response:
+            ad_res = response.read()
+            print("\n\nAd form responses: " + ad_res)
 
-        with open(off_tiktok_activity, "r", encoding='utf-8') as file14:
-            content14 = file14.read()
-            print("\n\nOff TikTok Activity: " + content14)
+        with open(off_tiktok_activity, "r", encoding='utf-8') as off_activity:
+            off_tiktok = off_activity.read()
+            print("\n\nOff TikTok Activity: " + off_tiktok)
     
     #Option 3
     elif view == '3':
