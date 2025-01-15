@@ -17,11 +17,15 @@ status = "TikTok_Data_1735588272\Tiktok\Activity\Status.txt"
 ad_interest = "TikTok_Data_1735588272\Tiktok\Ads and data\Ad Interests.txt"
 ad_response = "TikTok_Data_1735588272\Tiktok\Ads and data\Instant Form Ads Responses.txt"
 off_tiktok_activity = "TikTok_Data_1735588272\Tiktok\Ads and data\Off TikTok Activity.txt"
-
-
-
-
-
+block_list = "TikTok_Data_1735588272\Tiktok\App Settings\Block List.txt"
+accsettings = "TikTok_Data_1735588272\Tiktok\App Settings\Settings.txt"
+direct_messages = "TikTok_Data_1735588272\Tiktok\Direct Messages\Direct Messages.txt"
+transaction_history = "TikTok_Data_1735588272\Tiktok\Income+ Wallet Transactions\Transaction History.txt"
+post = "TikTok_Data_1735588272\Tiktok\Posts\Post.txt"
+rdp = "TikTok_Data_1735588272\Tiktok\Posts\Recently Deleted Posts.txt"
+profile_info = "TikTok_Data_1735588272\Tiktok\Profile\Profile Info.txt"
+ai_moji = "TikTok_Data_1735588272\Tiktok\Profile\AI-Moji.txt"
+auto_info = "TikTok_Data_1735588272\Tiktok\Profile\Autofill.txt"
 
 
 
@@ -62,7 +66,7 @@ while True:
 
         elif activity_option == 4:
             with open(followers, "r", encoding='utf-8') as follows:
-                followed_by = file.read()
+                followed_by = follows.read()
                 print("\n\nFollowers: " + followed_by)
 
         elif activity_option == 5:
@@ -124,39 +128,39 @@ while True:
     elif view == '3':
         settings = int(input('Blocked accounts(1)\nSettings(2)\n>>>'))
         if settings == 1:
-            with open("", "r") as file:
-                content = file.read()
-                print(content)
+            with open(block_list, "r", encoding='utf-8') as blocked:
+                blocked_list = blocked.read()
+                print(blocked_list)
         elif settings == 2: 
-           with open("", "r") as file:
-                content = file.read()
-                print(content)
+           with open(accsettings, "r", encoding='utf-8') as account_settings:
+                acc_sets = account_settings.read()
+                print(acc_sets)
         else: 
             print("Please choose one of the 2 options")
     
     #Option 4
     elif view == '4':
-        with open("", "r") as file:
-                content = file.read()
-                print(content)
+        with open(direct_messages, "r", encoding='utf-8') as dms:
+                messages = dms.read()
+                print(messages)
 
     #Option 5
     elif view == '5':
-        with open("", "r") as file:
-                content = file.read()
-                print(content)
+        with open(transaction_history, "r", encoding='utf-8') as transactions:
+                trans_his = transactions.read()
+                print(trans_his)
 
     #Option 6
     elif view == '6':
         posts = int(input('Posts(1)\nRecently deleted posts(2)\n>>>'))
         if posts == 1:
-            with open("", "r") as file:
-                content = file.read()
-                print(content)
+            with open(post, "r", encoding='utf-8') as posts:
+                post_his = posts.read()
+                print(post_his)
         elif posts == 2: 
-            with open("", "r") as file:
-                content = file.read()
-                print(content)
+            with open(rdp, "r", encoding='utf-8') as recently_deleted:
+                recent_deleted = recently_deleted.read()
+                print(recent_deleted)
         else: 
             print("Please choose one of the 2 options")
 
@@ -164,13 +168,14 @@ while True:
     elif view == '7':
         profile = int(input('Profile info(1)\nOther(2)\n>>>'))
         if profile == 1: 
-            with open("", "r") as file:
-                content = file.read()
-                print(content)
+            with open(profile_info, "r", encoding='utf-8') as prof_info:
+                print(prof_info.read())
         elif profile == 2: 
-            with open("", "r") as file:
-                content = file.read()
-                print(content)
+            with open(ai_moji, "r", encoding='utf-8') as ai_emoji:
+                print(ai_emoji.read())
+        elif profile == 2: 
+            with open(auto_info, "r", encoding='utf-8') as auto_fill:
+                print(auto_fill.read())
         else: 
             print("Please choosse one of the 2 options")
 
@@ -178,11 +183,11 @@ while True:
     elif view == '8':
         live = int(input('Live history *comments, watched lives, etc*(1)\nOther(2)\n>>>'))
         if live == 1: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         elif live == 2: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         else: 
@@ -191,23 +196,23 @@ while True:
     elif view == '9':
         shop = int(input('Orders(1)\nBrowsing History(2)\nShopping Cart(3)\nReviews(4)\nOther(5)\n>>>'))
         if shop == 1: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         elif shop == 2: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         elif shop == 3: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         elif shop == 4: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         elif shop == 5: 
-            with open("", "r") as file:
+            with open("", "r", encoding='utf-8') as file:
                 content = file.read()
                 print(content)
         else: 
