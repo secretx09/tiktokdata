@@ -173,7 +173,6 @@ while True:
         elif profile == 2: 
             with open(ai_moji, "r", encoding='utf-8') as ai_emoji:
                 print(ai_emoji.read())
-        elif profile == 2: 
             with open(auto_info, "r", encoding='utf-8') as auto_fill:
                 print(auto_fill.read())
         else: 
