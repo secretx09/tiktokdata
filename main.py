@@ -30,11 +30,17 @@ live_his = "TikTok_Data_1735588272\Tiktok\TikTok Live\Watch Live History.txt"
 golive_his = "TikTok_Data_1735588272\Tiktok\TikTok Live\Go Live History.txt"
 golive_sets = "TikTok_Data_1735588272\Tiktok\TikTok Live\Go Live settings.txt"
 watchlive_sets = "TikTok_Data_1735588272\Tiktok\TikTok Live\Watch Live settings.txt"
-
-
-
-
-
+orders = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Order History.txt"
+product_lookup_history = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Product Browsing History.txt"
+cart = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Shopping Cart List.txt"
+reviews = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Product Reviews.txt"
+communication = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Communication with shops.txt"
+payment_info = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Current Payment Information.txt"
+customer_support = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Customer support history.txt"
+disputes = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Order dispute history.txt"
+return_refunds = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Returns and Refunds History.txt"
+saved_address = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Saved Address Information.txt"
+vouchers = "TikTok_Data_1735588272\Tiktok\TikTok Shopping\Vouchers.txt"
 
 
 print("Activity(1)\nAds and data(2)\nApp Settings(3)\nDM's(4)\nIncome + Wallet Transactions(5)\nPosts(6)\nProfile(7)\nTikTok Live(8)\nTikTok Shopping(9)\n")
@@ -45,128 +51,103 @@ while True:
         activity_option = int(input("Browsing History(1)\nComments(2)\nFavorite effects, hashtags, sounds, videos(3)\nFollowers(4)\nFollowing(5)\nShare History(6)\nOther(7)\n>>>"))
         if activity_option == 1:
             with open(browsing_history, "r", encoding='utf-8') as history:
-                history = history.read()
-                print("\n\nBrowsing History: " + history)
+                print("\n\nBrowsing History: " + history.read())
 
         elif activity_option == 2:
             with open(comments, "r", encoding='utf-8') as comment:
-                comment = comment.read()
-                print("\n\nComments: " + comment)
+                print("\n\nComments: " + comment.read())
 
         elif activity_option == 3:
             with open(fav_effect, "r", encoding='utf-8') as effect:
-                effects = effect.read()
-                print("\n\nEffects: " + effect)
+                print("\n\nEffects: " + effect.read())
 
             with open(fav_hash, "r", encoding='utf-8') as hash:
-                hash = hash.read()
-                print("\n\nHashtags: " + hash)
+                print("\n\nHashtags: " + hash.read())
 
             with open(fav_sound, "r", encoding='utf-8') as sounds:
-                sounds = sounds.read()
-                print("\n\nSounds: " + sounds)
+                print("\n\nSounds: " + sounds.read())
 
             with open(fav_video, "r", encoding='utf-8') as videos:
-                videos = videos.read()
-                print("\n\nVideos: " + videos)
+                print("\n\nVideos: " + videos.read())
 
         elif activity_option == 4:
             with open(followers, "r", encoding='utf-8') as followed_by:
-                followed_by = followed_by.read()
-                print("\n\nFollowers: " + followed_by)
+                print("\n\nFollowers: " + followed_by.read())
 
         elif activity_option == 5:
             with open(following, "r", encoding='utf-8') as following:
-                following = following.read()
-                print("\n\nFollowing: " + following)
+                print("\n\nFollowing: " + following.read())
 
         elif activity_option == 6:
             with open(share_history, "r", encoding='utf-8') as shared:
-                shared = shared.read()
-                print("\n\nShare History: " + shared)
+                print("\n\nShare History: " + shared.read())
 
         elif activity_option == 7:
             with open(hashtags, "r", encoding='utf-8') as hashs:
-                hashs = hashs.read()
-                print("\n\nHashtags: " + hashs)
+                print("\n\nHashtags: " + hashs.read())
 
             with open(like_list, "r", encoding='utf-8') as like_lists:
-                like_lists = like_lists.read()
-                print("\n\nLike list: " + like_lists)
+                print("\n\nLike list: " + like_lists.read())
 
             with open(loc_review, "r", encoding='utf-8') as location:
-                location = location.read()
-                print("\n\nLocation Reviews?: " + location)
+                print("\n\nLocation Reviews?: " + location.read())
 
             with open(login_history, "r", encoding='utf-8') as logins:
-                logins = logins.read()
-                print("\n\nLogin History: " + logins)
+                print("\n\nLogin History: " + logins.read())
 
             with open(purchases, "r", encoding='utf-8') as purchased:
-                purchased = purchased.read()
-                print("\n\nPurchases: " + purchased)
+                print("\n\nPurchases: " + purchased.read())
 
             with open(searches, "r", encoding='utf-8') as search:
-                search = search.read()
-                print("\n\nSearches: " + search)
+                print("\n\nSearches: " + search.read())
 
             with open(status, "r", encoding='utf-8') as stats:
-                stats = stats.read()
-                print("\n\nStatus: " + stats)
+                print("\n\nStatus: " + stats.read())
         else:
             print("Please choose one of the options (1-6)")
 
     #Option 2
     elif view == '2':
         with open(ad_interest, "r", encoding='utf-8') as interest:
-            ad_int = interest.read()
-            print("\n\nAd Interests: " + ad_int)
+            print("\n\nAd Interests: " + interest.read())
 
         with open(ad_response, "r", encoding='utf-8') as response:
-            ad_res = response.read()
-            print("\n\nAd form responses: " + ad_res)
+            print("\n\nAd form responses: " + response.read())
 
         with open(off_tiktok_activity, "r", encoding='utf-8') as off_activity:
-            off_tiktok = off_activity.read()
-            print("\n\nOff TikTok Activity: " + off_tiktok)
+            print("\n\nOff TikTok Activity: " + off_activity.read())
     
     #Option 3
     elif view == '3':
         settings = int(input('Blocked accounts(1)\nSettings(2)\n>>>'))
         if settings == 1:
             with open(block_list, "r", encoding='utf-8') as blocked:
-                blocked_list = blocked.read()
-                print(blocked_list)
+                print("\n\nBlocked Accounts: " + blocked.read())
         elif settings == 2: 
            with open(accsettings, "r", encoding='utf-8') as account_settings:
-                acc_sets = account_settings.read()
-                print(acc_sets)
+                print("\n\nSettings: " + account_settings.read())
         else: 
             print("\n\nPlease choose one of the 2 options")
     
     #Option 4
     elif view == '4':
         with open(direct_messages, "r", encoding='utf-8') as dms:
-                messages = dms.read()
-                print("\n\n" +messages)
+                print("\n\nDMS: " + dms.read())
 
     #Option 5
     elif view == '5':
         with open(transaction_history, "r", encoding='utf-8') as transactions:
-                trans_his = transactions.read()
-                print("\n\n" + trans_his)
+                print("\n\nTransactions: " + transactions.read())
 
     #Option 6
     elif view == '6':
         posts = int(input('Posts(1)\nRecently deleted posts(2)\n>>>'))
         if posts == 1:
             with open(post, "r", encoding='utf-8') as posts:
-                posts = posts.read()
-                print("\n\n" + posts)
+                print("\n\nPosts: " + posts.read())
         elif posts == 2: 
             with open(rdp, "r", encoding='utf-8') as recently_deleted:
-                recent_deleted = recently_deleted.read()
-                print("\n\n" + recent_deleted)
+                print("\n\nRecently Deleted Posts: " + recently_deleted.read())
         else: 
             print("Please choose one of the 2 options")
 
@@ -175,13 +156,13 @@ while True:
         profile = int(input('Profile info(1)\nOther(2)\n>>>'))
         if profile == 1: 
             with open(profile_info, "r", encoding='utf-8') as prof_info:
-                print("\n\n" + prof_info.read())
+                print("\n\nProfile Info: " + prof_info.read())
         elif profile == 2: 
             with open(ai_moji, "r", encoding='utf-8') as ai_emoji:
-                print("\n\n" + ai_emoji.read())
+                print("\n\nAI Emoji: " + ai_emoji.read())
 
             with open(auto_info, "r", encoding='utf-8') as auto_fill:
-                print("\n\n" + auto_fill.read())
+                print("\n\nAuto Fill Info: " + auto_fill.read())
         else: 
             print("Please choosse one of the 2 options")
 
@@ -190,41 +171,54 @@ while True:
         live = int(input('Live history *comments, watched lives, etc*(1)\nOther(2)\n>>>'))
         if live == 1: 
             with open(live_his, "r", encoding='utf-8') as live_history:
-                print("\n\n" + live_history.read())
+                print("\n\nLive History: " + live_history.read())
         elif live == 2: 
             with open(golive_his, "r", encoding='utf-8') as golive_history:
-                print("\n\n" + golive_history.read())
+                print("\n\nGo Live History: " + golive_history.read())
 
             with open(golive_sets, "r", encoding='utf-8') as golive_settings:
-                print("\n\n" + golive_settings.read())
+                print("\n\nGo Live Settings: " + golive_settings.read())
 
             with open(watchlive_sets, "r", encoding='utf-8') as watchlive_settings:
-                print("\n\n" + watchlive_settings.read())
+                print("\n\nWatch Live Settings: " + watchlive_settings.read())
         else: 
             print("Please choose 1 of the 2 options")
 
     elif view == '9':
         shop = int(input('Orders(1)\nBrowsing History(2)\nShopping Cart(3)\nReviews(4)\nOther(5)\n>>>'))
         if shop == 1: 
-            with open("", "r", encoding='utf-8') as file:
-                content = file.read()
-                print(content)
+            with open(orders, "r", encoding='utf-8') as order_history:
+                print("\n\nOrder History: " + order_history.read())
         elif shop == 2: 
-            with open("", "r", encoding='utf-8') as file:
-                content = file.read()
-                print(content)
+            with open(product_lookup_history, "r", encoding='utf-8') as plh:
+                print("\n\nProduct Lookup History: " + plh.read())
         elif shop == 3: 
-            with open("", "r", encoding='utf-8') as file:
-                content = file.read()
-                print(content)
+            with open(cart, "r", encoding='utf-8') as shopping_cart:
+                print("\n\nShopping Cart: " + shopping_cart.read())
         elif shop == 4: 
-            with open("", "r", encoding='utf-8') as file:
-                content = file.read()
-                print(content)
+            with open(reviews, "r", encoding='utf-8') as review_history:
+                print("\n\nProduct reviews: " + review_history.read())
         elif shop == 5: 
-            with open("", "r", encoding='utf-8') as file:
-                content = file.read()
-                print(content)
+            with open(communication, "r", encoding='utf-8') as shop_communication:
+                print("\n\nShop Communication: " + shop_communication.read())
+
+            with open(payment_info, "r", encoding='utf-8') as pay_info:
+                print("\n\nPayment Info: " + pay_info.read())
+
+            with open(customer_support, "r", encoding='utf-8') as support:
+                print("\n\nCustomer Support: " + support.read())
+
+            with open(disputes, "r", encoding='utf-8') as issues:
+                print("\n\nDisputes: " + issues.read())
+
+            with open(return_refunds, "r", encoding='utf-8') as returns:
+                print("\n\nReturns/Refunds: " + returns.read())
+
+            with open(saved_address, "r", encoding='utf-8') as addresses:
+                print("\n\nSaved Addresses: " + addresses.read())
+
+            with open(vouchers, "r", encoding='utf-8') as coupons:
+                print("\n\nVouchers/Coupons: " + coupons.read())
         else: 
             print("Please choose one of the options (1-5)")
     

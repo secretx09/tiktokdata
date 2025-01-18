@@ -3,8 +3,8 @@ class Main():
 
         self.history = {}
         self.load_live_history()
-    def load_live_history(self):
-        with open(r'TikTok_Data_1735588272\Tiktok\TikTok Live\Watch Live History.txt', 'r', encoding='utf-8') as f:
+'''    def load_live_history(self):
+        with open(r"TikTok_Data_1735588272\Tiktok\TikTok Live\Watch Live History.txt", 'r', encoding='utf-8') as f:
             collecting_comments = False
             for line in f:
                 line = line.strip()
@@ -22,7 +22,28 @@ class Main():
                     elif collecting_comments: 
                         
                         comment_key = line[:21]
-                        comments[comment_key] = line[23:]
+                        comments[comment_key] = line[23:]'''
+
+def load_live_history(self):
+    with open(r"TikTok_Data_1735588272\Tiktok\TikTok Live\Watch Live History.txt", 'r', encoding='utf-8') as f:
+        collecting_comments = False
+        for line in f:
+            line = line.strip()
+            if line:
+                if line.startswith('Date and time:'):
+                    his_key = line[15:]
+                elif line.startswith("Comments you sent"):
+                    comments = {}
+                    collecting_comments = True
+                elif line.startswith("Questions you sent"):
+                    questions = []
+                    collecting_comments = False
+                elif collecting_comments: 
+                    comment_key = line[:21]
+                    comments[comment_key] = line[23:]
+
+        # Update self.history with the collected comments
+        self.history[his_key] = comments  # Assuming you want to store comments under the date key
 
     def print_live_history(self):
         for key, value in self.history.items():
