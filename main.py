@@ -1,3 +1,14 @@
+import os
+import tkinter as tk
+from tkinter import ttk
+
+def find_txt_file(filename):
+    for root, dirs, files in os.walk("."):
+        for file in files:
+            if file == filename:
+                return os.path.relpath(os.path.join(root, file))
+    return None
+
 browsing_history = "TikTok_Data_1735588272\Tiktok\Activity\Browsing History.txt"
 comments = "TikTok_Data_1735588272\Tiktok\Activity\Comments.txt"
 followers = "TikTok_Data_1735588272\Tiktok\Activity\Follower.txt"
