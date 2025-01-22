@@ -221,5 +221,5 @@ while saved_address == True:
 
 vouchers = True
 while vouchers == True:
-    filename_to_search = "CommVouchersents.txt"
+    filename_to_search = "Vouchers.txt"
     vouchers = find_txt_file(filename_to_search)
